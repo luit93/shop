@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import SearchIcon from '@mui/icons-material/Search';const Container = styled.div`
+import SearchIcon from '@mui/icons-material/Search';
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+import { Badge } from '@mui/material';
+const Container = styled.div`
 height: 60px;
 
 `
@@ -13,7 +16,17 @@ align-items:center;
 `
 
 const Left = styled.div`
+
+display:flex;
 flex:1;
+align-items:center;
+justify-content: flex-start;
+`
+const MenuItem = styled.div`
+ padding:20px;
+// margin:15px;
+font-size:14px;
+cursor:pointer;
 `
 const Center = styled.div`flex:1;
 tex-align:center;
@@ -46,7 +59,15 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>Left</Left>
+        <Left>
+          <MenuItem>Register</MenuItem>
+          <MenuItem>Log In</MenuItem>
+          <MenuItem>
+          <Badge badgeContent={0} color="primary">
+  <LocalMallOutlinedIcon />
+</Badge></MenuItem>
+          
+        </Left>
         <Center>
           <Logo>LUIT . s</Logo>
         </Center>
