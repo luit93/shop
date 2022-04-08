@@ -5,6 +5,7 @@ import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import { Badge } from '@mui/material';
 const Container = styled.div`
 height: 60px;
+padding-bottom: 20px;
 
 `
 const Wrapper = styled.div`
@@ -29,7 +30,7 @@ font-size:14px;
 cursor:pointer;
 `
 const Center = styled.div`flex:1;
-tex-align:center;
+text-align:center;
 `
 const Logo = styled.h1`
 font-weight: bold;`
