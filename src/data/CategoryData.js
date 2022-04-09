@@ -6,12 +6,12 @@ export const categories = [
     },
     {
       id: 2,
-      img: "https://www.djtimes.com/wp-content/uploads/2021/07/pioneer-dj-announces-off-white-collaboration-ddj-1000-ow-dj-times.png",
+      img: "https://djmag.com/sites/default/files/storyimages/cdj/pioneerdjcdj3000/pioneer_dj_cdj3000_2.jpg",
       title: "ELECTRONICS!",
     },
     {
       id: 3,
-      img: "https://i0.wp.com/media.criticalhit.net/2018/02/Infinity-Gauntlet-1.jpg?ssl=1",
+      img: "https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2021/11/Pokeball-Replicas.jpg",
       title: "COLLECTIBLES!",
     },
       {id: 4,
