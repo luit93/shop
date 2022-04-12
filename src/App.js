@@ -1,16 +1,17 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import NotificationBar from './components/NotificationBar';
+
+import Layout from './components/layout/Layout';
 import Home from './pages/Home';
+import ProductList from './pages/ProductList';
+import ProductPage from './pages/ProductPage';
 
 function App() {
   return (
-    <div>
-     <NotificationBar/>
-      <Header/>
-     <Home/>
-     <Footer/>
+    <div class="app-body">
+    <Layout >
+      <ProductPage/>
+      
+    </Layout>
   
      
        
