@@ -2,7 +2,7 @@ import styled from "styled-components"
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCart from '@mui/icons-material/AddShoppingCart';
  
-
+//products on homepage
 const Info = styled.div`
 opacity: 0;
 position: absolute;
