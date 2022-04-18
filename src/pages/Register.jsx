@@ -57,6 +57,7 @@ const Link = styled.a`
 font-size:12px;
 margin: 20px 0;
 padding: 5px 20px;
+cursor: pointer;
 `
 
 
