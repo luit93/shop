@@ -14,7 +14,7 @@ function App() {
     <Layout >
       
    
-      <Cart/>
+      <Home/>
     </Layout>
   
      

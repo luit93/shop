@@ -3,6 +3,7 @@ import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import { sliderItems } from "../data/HomeData";
 import { useState } from "react";
+import{mobileSize} from '../responsive'
 const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -10,6 +11,8 @@ const Container = styled.div`
   /* background-color: coral; */
   position: relative;
   overflow: hidden;
+  ${mobileSize({ display:"none"})}
+
 `;
 const Arrow = styled.div`
   width: 50px;

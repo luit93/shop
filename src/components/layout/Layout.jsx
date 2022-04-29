@@ -4,7 +4,9 @@ import Header from "./Header";
 import NotificationBar from "./NotificationBar";
 
 import "../../App.css";
-const Container = styled.div``;
+const Container = styled.div`
+
+`;
 const Layout = ({ children }) => {
   return (
     <Container class="app-body">

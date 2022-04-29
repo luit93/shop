@@ -3,9 +3,12 @@ import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import { Badge } from '@mui/material';
+import{mobileSize} from '../../responsive'
+
 const Container = styled.div`
 height: 60px;
 padding-bottom: 20px;
+${mobileSize({ height:"50px"})}
 
 `
 const Wrapper = styled.div`
@@ -14,6 +17,7 @@ padding: 10px 20px;
 display: flex;
 justify-content: space-between;
 align-items:center;
+${mobileSize({ padding:"10px  0"})}
 `
 
 const Left = styled.div`
@@ -28,20 +32,27 @@ const MenuItem = styled.div`
 // margin:15px;
 font-size:14px;
 cursor:pointer;
+${mobileSize({ fontSize:"12px", marginLeft:"11px"})}
+
 `
 const Center = styled.div`flex:1;
 text-align:center;
 `
 const Logo = styled.h1`
-font-weight: bold;`
+font-weight: bold;
+${mobileSize({ fontSize:"25px"})}
+`
 const Right = styled.div`flex:1;
 display:flex;
 align-items:center;
+justify-content: flex-end;
+${mobileSize({ flex:2,justifyContent:"center"})}
 
 `
 const Language = styled.span`
 font-size:14px;
 cursor:pointer;
+${mobileSize({ display:"none"})}
 `
 const SearchBar  = styled.div`
 border: 1px solid black;
@@ -49,6 +60,7 @@ display:flex;
 align-items:center;
 margin-left:20px;
 padding:7px;
+${mobileSize({ width:"50px"})}
 `
 const SearchInput = styled.input`
 border:none;
@@ -75,7 +87,7 @@ const Header = () => {
         <Right>
           <Language>EN</Language>
           <SearchBar>
-<SearchInput/>
+<SearchInput placeholder="Search"/>
 <SearchIcon/>
           </SearchBar>
         </Right>
